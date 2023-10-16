@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
+
 import Header from './Component/Header'
 import Home from './Component/Home'
 import About from './Component/About'
 import Skills from './Component/Skills'
 import Projects from './Component/Projects'
 import Footer from './Component/Footer'
-import { useState } from 'react'
 import Sidebar from './Component/Sidebar'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
     <div>
       <Header onClick={handleClick} />
-      {sideBar && <Sidebar />}
+      <div>{sideBar && <Sidebar />}</div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
