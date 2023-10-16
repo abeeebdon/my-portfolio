@@ -5,14 +5,18 @@ import About from './Component/About'
 import Skills from './Component/Skills'
 import Projects from './Component/Projects'
 import Footer from './Component/Footer'
+import { useState } from 'react'
+import Sidebar from './Component/Sidebar'
 
 function App() {
+  const [sideBar, setSideBar] = useState(false)
   const handleClick = () => {
-    console.log('I clicked')
+    setSideBar(true)
   }
   return (
     <div>
       <Header onClick={handleClick} />
+      {sideBar && <Sidebar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -380,3 +380,10 @@ span {
     margin-top: 2rem;
   }
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  background-color: red;
+}
