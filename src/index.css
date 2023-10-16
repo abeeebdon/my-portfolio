@@ -137,6 +137,7 @@ span {
 .about-img img {
   width: 25vw;
   height: 40vh;
+  border-radius: 50%;
 }
 .heading {
   text-align: center;
@@ -156,7 +157,6 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
-
 
 .portfolio {
   background: var(--bg-color);
