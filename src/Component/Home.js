@@ -12,12 +12,10 @@ const Home = () => {
           interfaces and user experience
         </p>
 
-        <a href="#" className="btn">
-          Download CV
-        </a>
+        <button className="btn">Download CV</button>
       </div>
       <div className="image">
-        <img src="pics.jpeg" alt="image" />
+        <img src="pics.jpeg" alt="my_pics" />
       </div>
     </section>
   )

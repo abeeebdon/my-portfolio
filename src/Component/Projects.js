@@ -17,7 +17,11 @@ const Projects = () => {
           <div className="portfolio-layer">
             <h4>Web Design</h4>
             <p>A project from frontend mentor</p>
-            <a href="https://abeebdonfemp.netlify.app" target="_blank">
+            <a
+              href="https://abeebdonfemp.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaChevronUp />
             </a>
           </div>
@@ -27,7 +31,11 @@ const Projects = () => {
           <div className="portfolio-layer">
             <h4>Web Design</h4>
             <p>A three web pages for a restaurant</p>
-            <a href="https://majestic-sushi.netlify.app" target="_blank">
+            <a
+              href="https://majestic-sushi.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaChevronUp />
             </a>
           </div>
@@ -37,7 +45,11 @@ const Projects = () => {
           <div className="portfolio-layer">
             <h4>Web Design</h4>
             <p>Fylo Landing Page</p>
-            <a href="#">
+            <a
+              href="https://abeebdon-fylo-landing-page.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaChevronUp />
             </a>
           </div>
@@ -48,7 +60,11 @@ const Projects = () => {
           <div className="portfolio-layer">
             <h4>Web Design</h4>
             <p>A dummy of ODIN sign up Page</p>
-            <a href="https://abeebdonodinproject.netlify.app">
+            <a
+              href="https://abeebdonodinproject.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaChevronUp />
             </a>
           </div>
@@ -58,7 +74,7 @@ const Projects = () => {
           <div className="portfolio-layer">
             <h4>Web Design</h4>
             <p>A dummy of facebook menu page</p>
-            <a href="#">
+            <a href="https://abeebdon-fylo-landing-page.netlify.app/">
               <FaChevronUp />
             </a>
           </div>

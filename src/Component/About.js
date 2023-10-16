@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-img">
-        <img src="pics.jpeg" alt="" />
+        <img src="pics.jpeg" alt="pics" />
       </div>
       <div className="about-content">
         <h2 className="heading">
@@ -16,9 +16,6 @@ const About = () => {
           blanditiis sunt illum esse ut assumenda. Asperiores iusto magnam fugit
           eius quo ab!
         </p>
-        <a href="" className="btn">
-          Read More
-        </a>
       </div>
     </section>
   )
