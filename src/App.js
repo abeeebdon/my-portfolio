@@ -7,9 +7,12 @@ import Projects from './Component/Projects'
 import Footer from './Component/Footer'
 
 function App() {
+  const handleClick = () => {
+    console.log('I clicked')
+  }
   return (
     <div>
-      <Header />
+      <Header onClick={handleClick} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

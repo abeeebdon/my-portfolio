@@ -1,6 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
-const Header = () => {
+const Header = ({ onClick }) => {
+  const click = () => {
+    onClick()
+  }
   return (
     <header className="header">
       <NavLink to="/" className="logo">
@@ -9,7 +12,9 @@ const Header = () => {
         </h2>
       </NavLink>
       <div id="menu-icon">
-        <FaBars />
+        <button onClick={click}>
+          <FaBars />
+        </button>
       </div>
       <nav className="navbar">
         <NavLink to="/" className="navlink">
