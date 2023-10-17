@@ -10,11 +10,11 @@ const About = () => {
         </h2>
         <h3>Frontend Developer</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          voluptates, sed natus alias ducimus ipsam dolores excepturi veritatis
-          tempore optio fuga, inventore laudantium vero impedit minima laborum,
-          blanditiis sunt illum esse ut assumenda. Asperiores iusto magnam fugit
-          eius quo ab!
+          I am Abeeb Maroof <span>abeebdon</span> an expert in creating
+          responsive website with great user interface and user experience. I
+          work well with others and have a great problem-solving skills. I
+          thrive in dynamic environments leveraging on my problem-solving skills
+          to overcome challenges and exceed expectation.
         </p>
       </div>
     </section>

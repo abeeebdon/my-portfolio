@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
-
 import Header from './Component/Header'
 import Home from './Component/Home'
 import About from './Component/About'
@@ -12,16 +11,16 @@ import Sidebar from './Component/Sidebar'
 function App() {
   const [sideBar, setSideBar] = useState(false)
   const handleClick = () => {
-    setSideBar(true)
+    setSideBar(!sideBar)
   }
   return (
     <div>
       <Header onClick={handleClick} />
-      <div>{sideBar && <Sidebar />}</div>
+      {sideBar ? <Sidebar /> : <div>Error</div>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/skill" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />

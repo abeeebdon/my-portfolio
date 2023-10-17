@@ -12,9 +12,9 @@ const Header = ({ onClick }) => {
         </h2>
       </NavLink>
       <div id="menu-icon">
-        <button onClick={click}>
+        <div onClick={click}>
           <FaBars />
-        </button>
+        </div>
       </div>
       <nav className="navbar">
         <NavLink to="/" className="navlink">

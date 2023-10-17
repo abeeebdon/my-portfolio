@@ -8,8 +8,8 @@ const Home = () => {
           And I am a <span>Frontend Developer</span>
         </h3>
         <p>
-          High level experience in creating responsive web pages with great user
-          interfaces and user experience
+          I am highly experience in creating responsive web pages with great
+          user interfaces and user experience
         </p>
 
         <button className="btn">Download CV</button>

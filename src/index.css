@@ -268,6 +268,39 @@ span {
   color: var(--bg-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-image {
+  width: fit-content;
+  padding: 10px;
+}
+.grid-image img {
+  width: 200px;
+  height: 200px;
+}
+.grid-image p {
+  text-align: center;
+  font-size: 2rem;
+}
+.sidebar {
+  min-height: 30vh;
+  background-color: var(--second-bg-color);
+  display: flex;
+  flex-direction: row;
+}
+.sidebar p {
+  color: var(--bg-color);
+  font-size: 2rem;
+  z-index: 20;
+}
 
 /* BREAKPOINTS */
 
@@ -323,6 +356,10 @@ span {
   .home {
     flex-direction: column;
   }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95vw;
+  }
   .home-content h3 {
     font-size: 2.6rem;
   }
@@ -355,6 +392,9 @@ span {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
+  #menu-icon {
+    display: block;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -362,6 +402,9 @@ span {
   }
   .contact-form .input-box input {
     width: 100%;
+  }
+  #menu-icon {
+    display: block;
   }
 }
 
@@ -379,11 +422,7 @@ span {
     text-align: center;
     margin-top: 2rem;
   }
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-
-  background-color: red;
+  .grid {
+    display: block;
+  }
 }
