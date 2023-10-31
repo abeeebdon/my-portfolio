@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className="home" id="home">
+    <section className="home">
       <div className="home-content">
         <h3>Hello it's Me</h3>
         <h1>Abeeb Maroof</h1>
@@ -12,6 +12,9 @@ const Home = () => {
           user interfaces and user experience
         </p>
 
+        <button className="btn">
+          <a href="https://github.com/abeeebdon">GITHub</a>
+        </button>
         <button className="btn">Download CV</button>
       </div>
       <div className="image">
