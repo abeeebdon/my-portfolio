@@ -355,7 +355,7 @@ span {
   }
 
   .portfolio {
-    margin-bottom: 7rem;
+    margin-top: 12rem;
   }
   .contact {
     min-height: auto;
@@ -406,6 +406,7 @@ span {
   }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
   }
 }
 @media (max-width: 617px) {
@@ -415,6 +416,10 @@ span {
   .navbar {
     display: none;
   }
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
   #menu-icon {
     display: block;
   }
@@ -423,7 +428,10 @@ span {
   html {
     font-size: 50%;
   }
-
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
   #menu-icon {
     display: block;
   }
@@ -448,5 +456,9 @@ span {
   }
   .grid {
     display: block;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
   }
 }
