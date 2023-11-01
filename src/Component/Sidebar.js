@@ -2,18 +2,10 @@ import { NavLink } from 'react-router-dom'
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <NavLink to="/">
-        <p>Home</p>
-      </NavLink>
-      <NavLink to="about">
-        <p>About</p>
-      </NavLink>
-      <NavLink to="skills">
-        <p>My Skills</p>
-      </NavLink>
-      <NavLink to="projects">
-        <p>Projects</p>
-      </NavLink>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="about">About</NavLink>
+      <NavLink to="skill">My Skills</NavLink>
+      <NavLink to="projects">Projects</NavLink>
     </div>
   )
 }

@@ -24,7 +24,7 @@ body {
   max-width: 1600px;
 }
 section {
-  min-height: 80vh;
+  min-height: 80%;
   padding: 10rem 9% 2rem;
 }
 
@@ -48,33 +48,31 @@ section {
     font-weight: 600;
     cursor: default;
   }
-  #menu-icon {
-    font-size: 3.6rem;
-    display: none;
-    color: $tc;
-  }
+}
+#menu-icon {
+  font-size: 3.6rem;
+  display: none;
+  color: $tc;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.7rem;
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    font-size: 1.7rem;
-
-    .active {
-      color: $mc;
-      .navlink {
-        font-size: 1.7rem;
-        color: $tc;
-        margin-left: 4rem;
-        transition: 0.3s;
-        &:hover {
-          color: $tc;
-        }
+  .active {
+    color: $mc;
+    .navlink {
+      font-size: 1.7rem;
+      color: $tc;
+      margin-left: 4rem;
+      transition: 0.3s;
+      &:hover {
+        color: $mc;
       }
     }
   }
 }
-
 /* header styling ends here */
 
 /* Home or landing page  styling starts her (landing page) */
@@ -296,27 +294,22 @@ span {
   }
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-}
-.grid-image {
-  width: fit-content;
-  padding: 10px;
-}
-.grid-image img {
-  width: 200px;
-  height: 200px;
-}
-.grid-image p {
-  text-align: center;
-  font-size: 2rem;
+  .grid-image {
+    width: fit-content;
+    padding: 10px;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    p {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
 }
 
 // The sidebar shows when the menu icon is
@@ -327,12 +320,12 @@ span {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.2rem;
+  padding: 2rem;
   padding-top: 2rem;
 
-  .sidebar p {
-    color: var(--text-color);
-    font-size: 2rem;
+  a {
+    color: $mc;
+    font-size: 3rem;
     z-index: 20;
   }
 }
@@ -352,11 +345,9 @@ span {
     padding: 2rem 3%;
   }
   section {
-    padding: 10rem 3% 2rem;
+    padding: 2rem 3% 2rem;
   }
-  .services {
-    padding-bottom: 7rem;
-  }
+
   .portfolio {
     margin-bottom: 7rem;
   }
@@ -369,28 +360,13 @@ span {
 }
 
 @media (max-width: 760px) {
+  .navbar {
+    display: none;
+  }
   #menu-icon {
     display: block;
   }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: $bg;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-  .navbar.active {
-    display: block;
-  }
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-  }
+
   .home {
     flex-direction: column;
   }
@@ -430,6 +406,9 @@ span {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
+  .navbar {
+    display: none;
+  }
   #menu-icon {
     display: block;
   }
@@ -438,11 +417,12 @@ span {
   html {
     font-size: 50%;
   }
-  .contact-form .input-box input {
-    width: 100%;
-  }
+
   #menu-icon {
     display: block;
+  }
+  .navbar {
+    display: none;
   }
 }
 
