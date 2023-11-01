@@ -317,14 +317,20 @@ span {
 .sidebar {
   margin-top: 60px;
   min-height: 30vh;
+  min-width: 30vw;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
   padding-top: 2rem;
-
+  background-color: $mc;
+  position: absolute;
+  left: 70%;
+  right: auto;
+  top: 2%;
+  bottom: auto;
   a {
-    color: $mc;
+    color: $tc;
     font-size: 3rem;
     z-index: 20;
   }
