@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom'
-import { FaBars } from 'react-icons/fa'
-const Header = ({ onClick }) => {
+import { FaAngleUp, FaBars } from 'react-icons/fa'
+const Header = ({ onClick, sideBar }) => {
   const click = () => {
     onClick()
   }
+
   return (
     <header className="header">
       <NavLink to="/" className="logo">
@@ -12,15 +13,12 @@ const Header = ({ onClick }) => {
         </h2>
       </NavLink>
       <div id="menu-icon">
-        <div onClick={click}>
-          <FaBars />
-        </div>
+        <div onClick={click}>{sideBar ? <FaAngleUp /> : <FaBars />}</div>
       </div>
       <nav className="navbar">
         <NavLink to="/" className="navlink">
           Home
         </NavLink>
-
         <NavLink to="about" className="navlink">
           About
         </NavLink>

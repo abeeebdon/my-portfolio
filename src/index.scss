@@ -320,18 +320,20 @@ span {
   min-width: 30vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  padding: 2rem;
-  padding-top: 2rem;
-  background-color: $mc;
+  padding: 2rem 2rem 0px 3rem;
+  padding-right: 3rem;
+  background-color: rgb(173, 173, 173);
   position: absolute;
   left: 70%;
-  right: auto;
-  top: 2%;
-  bottom: auto;
+  right: 20%;
+  top: 0px;
+  bottom: 100%;
+
   a {
-    color: $tc;
-    font-size: 3rem;
+    color: $bg;
+    font-size: 2.5rem;
     z-index: 20;
   }
 }
@@ -372,7 +374,9 @@ span {
   #menu-icon {
     display: block;
   }
-
+  section {
+    margin-top: 4rem;
+  }
   .home {
     flex-direction: column;
   }
@@ -393,12 +397,13 @@ span {
   .about {
     flex-direction: column-reverse;
   }
-  .about img {
-    margin-top: 4rem;
-    width: 70vw;
-  }
-  .services h2 {
-    margin-bottom: 3rem;
+  .about-img {
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+    img {
+      width: 100vw;
+    }
   }
 
   .portfolio h2 {
@@ -445,7 +450,7 @@ span {
     width: 90vw;
   }
   .about-img img {
-    width: 90vw;
+    width: 100vw;
   }
   .footer {
     flex-direction: column-reverse;

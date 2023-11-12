@@ -15,8 +15,8 @@ function App() {
   }
   return (
     <div>
-      <Header onClick={handleClick} />
-      {sideBar ? <Sidebar /> : <div>Error</div>}
+      <Header onClick={handleClick} sideBar={sideBar} />
+      {sideBar ? <Sidebar /> : <div>N</div>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -5,7 +5,6 @@ const About = () => {
         <h2>
           About <span>ME</span>
         </h2>
-        <h3>Frontend Developer</h3>
         <p>
           I am Abeeb Maroof <span>Abeebdon</span> an expert in creating
           responsive website with great user interface and user experience. I
