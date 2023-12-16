@@ -15,7 +15,6 @@ $mc: rgba(247, 5, 5, 0.849);
 
 html {
   font-size: 72.5%;
-  /* overflow: hidden; */
 }
 
 body {
@@ -28,7 +27,10 @@ section {
   padding: 10rem 9% 2rem;
 }
 
-/* Header styling starts here */
+/* Header styling starts here
+
+
+for Header*/
 
 .header {
   position: fixed;
@@ -60,21 +62,34 @@ section {
   gap: 1rem;
   font-size: 1.7rem;
 
-  .active {
+  .navlink {
+    font-size: 1.7rem;
+    color: $tc;
+    margin-left: 4rem;
+    transition: 0.3s;
+  }
+
+  .navlink:hover {
     color: $mc;
-    .navlink {
-      font-size: 1.7rem;
-      color: $tc;
-      margin-left: 4rem;
-      transition: 0.3s;
-      &:hover {
-        color: $mc;
-      }
-    }
+  }
+  .navlink.active {
+    color: $mc;
   }
 }
+
+/* header styling ends here */
+/* header styling ends here */
+/* header styling ends here */
+/* header styling ends here */
+/* header styling ends here */
 /* header styling ends here */
 
+/* Home or landing page  styling starts her (landing page) */
+/* Home or landing page  styling starts her (landing page) */
+/* Home or landing page  styling starts her (landing page) */
+/* Home or landing page  styling starts her (landing page) */
+/* Home or landing page  styling starts her (landing page) */
+/* Home or landing page  styling starts her (landing page) */
 /* Home or landing page  styling starts her (landing page) */
 .home {
   display: flex;
@@ -151,11 +166,12 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 12rem 9% 2rem;
-  background: $sbg;
+  padding: 8rem 9% 2rem;
+  // background: $sbg;
   min-height: 80vh;
   .about-content {
-    color: $bg;
+    color: $sbg;
+    opacity: 100%;
     h2 {
       text-align: left;
       font-size: 4.5rem;
@@ -183,6 +199,7 @@ span {
 
 .portfolio {
   background: $bg;
+
   h2 {
     margin-bottom: 4rem;
   }
@@ -296,6 +313,7 @@ span {
 
 .grid {
   display: grid;
+  height: 80vh;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   .grid-image {
@@ -359,9 +377,7 @@ span {
   .portfolio {
     margin-top: 12rem;
   }
-  .contact {
-    min-height: auto;
-  }
+
   .footer {
     padding: 0.1rem 3%;
   }

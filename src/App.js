@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Header onClick={handleClick} sideBar={sideBar} />
-      {sideBar ? <Sidebar /> : <div>N</div>}
+      {sideBar ? <Sidebar /> : <div style={{ color: 'red' }}>N</div>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
