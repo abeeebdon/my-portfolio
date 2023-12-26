@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom'
-const Sidebar = () => {
+const Sidebar = ({ handleClick }) => {
   return (
     <aside>
-      <div className="sidebar">
+      <div className="sidebar" onClick={handleClick}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="about">About</NavLink>
         <NavLink to="skill">My Skills</NavLink>

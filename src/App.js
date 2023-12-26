@@ -7,16 +7,24 @@ import Skills from './Component/Skills'
 import Projects from './Component/Projects'
 import Footer from './Component/Footer'
 import Sidebar from './Component/Sidebar'
+import useWindowSize from './hooks/useWindowSize'
 
 function App() {
   const [sideBar, setSideBar] = useState(false)
+
+  const { width } = useWindowSize()
+
   const handleClick = () => {
     setSideBar(!sideBar)
   }
   return (
     <div>
-      <Header onClick={handleClick} sideBar={sideBar} />
-      {sideBar ? <Sidebar /> : <div style={{ color: 'red' }}>N</div>}
+      <Header handleClick={handleClick} sideBar={sideBar} width={width} />
+      {sideBar && width <= 760 ? (
+        <Sidebar handleClick={handleClick} />
+      ) : (
+        <div style={{ color: 'red' }}>N</div>
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
