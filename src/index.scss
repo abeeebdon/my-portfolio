@@ -98,7 +98,6 @@ for Header*/
   padding-top: 8rem;
   margin-left: 1rem;
   .home-content {
-    flex-basis: 55%;
     padding-left: 1rem;
     h1 {
       font-size: 5.6rem;
@@ -147,6 +146,9 @@ for Header*/
   }
 }
 
+.image {
+  max-width: 50%;
+}
 span {
   color: $mc;
 }
@@ -172,6 +174,7 @@ span {
     }
     p {
       font-size: 2rem;
+      line-height: 3rem;
       margin: 2rem 0 3rem;
     }
   }

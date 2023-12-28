@@ -6,7 +6,7 @@ import project from '../Data'
 const ProjectPage = () => {
   const { id } = useParams()
   const post = project.find((pro) => pro.id.toString() === id)
-  const { name, image, link } = post
+  const { name, image, link, desc, skills } = post
   console.log(name)
   return (
     <article className="projectPage">
@@ -19,7 +19,15 @@ const ProjectPage = () => {
         </div>
       </div>
       <div className="description">
-        <p></p>
+        <p className="desc">{desc[0]}</p>
+        <div>
+          <p>It is created with</p>
+
+          {skills.map((skill) => {
+            return <li key={skill}>{skill}</li>
+          })}
+          <p>{desc[1]}</p>
+        </div>
       </div>
     </article>
   )
