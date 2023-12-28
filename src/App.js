@@ -9,7 +9,6 @@ import Footer from './Component/Footer'
 import Sidebar from './Component/Sidebar'
 import useWindowSize from './hooks/useWindowSize'
 import project from './Data'
-import ProjectPage from './Component/ProjectPage'
 
 function App() {
   const [sideBar, setSideBar] = useState(false)
@@ -35,7 +34,6 @@ function App() {
           path="/projects"
           element={<Projects projects={project} setProjects={setProjects} />}
         />
-        <Route path="/projects/:id" element={<ProjectPage />} />
       </Routes>
       <Footer />
     </div>

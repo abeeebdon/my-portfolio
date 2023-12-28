@@ -13,8 +13,8 @@ const About = () => {
           to overcome challenges and exceed expectation.
         </p>
       </div>
-      <div className="home-img">
-        <img src="pics.jpeg" alt="pics" />
+      <div className="about-img">
+        <img src="pics.jpeg" alt="pics" className="img" />
       </div>
     </section>
   )

@@ -21,9 +21,11 @@ body {
   background: $bg;
   color: $tc;
   max-width: 1600px;
+  margin-bottom: 6rem;
 }
 section {
   min-height: 80%;
+  margin-top: 1rem;
   padding: 10rem 9% 2rem;
 }
 
@@ -146,9 +148,7 @@ for Header*/
   }
 }
 
-.image {
-  max-width: 50%;
-}
+//
 span {
   color: $mc;
 }
@@ -178,18 +178,16 @@ span {
       margin: 2rem 0 3rem;
     }
   }
-
-  .about-img img {
-    width: 30vw;
-    height: 40vh;
-    border-radius: 50%;
-  }
 }
 .heading {
   text-align: center;
   font-size: 4.5rem;
 }
 
+.skills {
+  padding-bottom: 4rem;
+  margin-bottom: 8rem;
+}
 .portfolio {
   background: $bg;
 
@@ -358,7 +356,7 @@ aside {
   width: 90vw;
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   div {
     margin-top: 2rem;
@@ -391,11 +389,36 @@ aside {
   }
 }
 
+.description {
+  background-color: red;
+  p {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .details {
+    padding: 1rem;
+    p {
+      line-height: 2rem;
+    }
+    ul {
+      text-align: left;
+      margin: 1rem 0px;
+      li {
+        list-style: none;
+        margin: 1rem;
+      }
+    }
+  }
+}
+
 /* BREAKPOINTS */
 
 @media (max-width: 1200px) {
   html {
     font-size: 65%;
+    .img {
+      width: 40vw;
+    }
   }
 }
 @media (max-width: 991px) {
@@ -412,6 +435,9 @@ aside {
 
   .footer {
     padding: 0.1rem 3%;
+  }
+  .img {
+    width: 35vw;
   }
 }
 

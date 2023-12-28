@@ -6,7 +6,7 @@ import img5 from '../images/javascript_image.png'
 import img6 from '../images/react_image.png'
 const Skills = () => {
   return (
-    <section className="home">
+    <section className="home skills">
       <div className="my-skills">
         <h1 className="heading" style={{ color: 'red' }}>
           My Skills
