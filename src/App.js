@@ -24,7 +24,7 @@ function App() {
       {sideBar && width <= 760 ? (
         <Sidebar handleClick={handleClick} />
       ) : (
-        <div style={{ color: 'red' }}>N</div>
+        <div style={{ color: 'red' }}></div>
       )}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
         <Route path="/skill" element={<Skills />} />
         <Route
           path="/projects"
-          element={<Projects projects={project} setProjects={setProjects} />}
+          element={<Projects projects={projects} setProjects={setProjects} />}
         />
       </Routes>
       <Footer />

@@ -4,11 +4,13 @@ import { FaFacebook } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
+  const time = new Date()
+  const year = time.getFullYear()
   return (
     <footer className="footer" id="footer">
       <div className="footer-text">
         <p>
-          copyright &copy; 2023 by <span> Abeebdon</span> All right reserved
+          copyright &copy; {year} by <span> Abeebdon</span> All right reserved
         </p>
       </div>
       <div className="social-media">
