@@ -3,7 +3,7 @@ const project = [
     id: 1,
     name: 'Purchase Game',
     image: '/img/desktop-preview.jpg',
-    link: 'https://abeebdonfemp.netlify.app',
+    link: 'https://buy-game.netlify.app/',
   },
   {
     id: 2,
@@ -29,6 +29,12 @@ const project = [
     name: 'Tea Cup',
     image: '/img/drawers.jpg',
     link: 'https://femp-teacup.netlify.app/',
+  },
+  {
+    id: 6,
+    name: 'Tea Cup',
+    image: '/img/space.jpeg',
+    link: 'https://space-tour-abeebdon.netlify.app/',
   },
 ]
 
