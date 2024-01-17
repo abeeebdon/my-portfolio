@@ -32,7 +32,7 @@ const project = [
   },
   {
     id: 6,
-    name: 'Tea Cup',
+    name: 'Space Tour',
     image: '/img/space.jpg',
     link: 'https://space-tour-abeebdon.netlify.app/',
   },
