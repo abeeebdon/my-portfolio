@@ -1,7 +1,4 @@
-import { FaGithub } from 'react-icons/fa'
-import { FaTwitter } from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   const time = new Date()
@@ -33,7 +30,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaInstagram />
+          <FaLinkedin />
         </a>
 
         <a href="https://github.com/abeeebdon" target="_blank" rel="noreferrer">
