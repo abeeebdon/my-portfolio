@@ -1,4 +1,4 @@
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
 
 const Footer = () => {
   const time = new Date()
