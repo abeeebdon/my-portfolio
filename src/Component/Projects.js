@@ -1,14 +1,26 @@
-import Project from './Project'
+import { FaChevronUp } from 'react-icons/fa'
 
-const Projects = ({ projects, setProjects }) => {
+const Projects = ({ project }) => {
   return (
     <section className="portfolio" id="portfolio">
       <h2 className="heading">
         <span>Projects</span>
       </h2>
       <div className="portfolio-container">
-        {projects.map((project) => {
-          return <Project key={project.id} project={project} />
+        {project.map((proj) => {
+          const { name, image, link } = proj
+
+          return (
+            <div className="portfoli-box">
+              <img src={image} alt={image} />
+              <div className="portfolio-layer">
+                <p>{name}</p>
+                <a href={link}>
+                  <FaChevronUp />
+                </a>
+              </div>
+            </div>
+          )
         })}
       </div>
     </section>
