@@ -1,8 +1,8 @@
 import { FaChevronUp } from 'react-icons/fa'
-
-const Projects = ({ project }) => {
+import { project } from './Data'
+const Projects = () => {
   return (
-    <section className="portfolio" id="portfolio">
+    <section className="portfolio" id="projects">
       <h2 className="heading">
         <span>Projects</span>
       </h2>

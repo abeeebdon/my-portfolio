@@ -1,27 +1,26 @@
-import { NavLink } from 'react-router-dom'
 import { FaAngleUp, FaBars } from 'react-icons/fa'
 const Header = ({ handleClick, sideBar, width }) => {
   return (
     <header className="header">
-      <NavLink to="/" className="logo">
+      <a href="#home" className="logo">
         <h2>
           Abeeb<span>don</span>
         </h2>
-      </NavLink>
+      </a>
       {width >= 760 ? (
         <nav className="navbar">
-          <NavLink to="/" className="navlink">
+          <a href="#home" className="navlink">
             Home
-          </NavLink>
-          <NavLink to="about" className="navlink">
+          </a>
+          <a href="#about" className="navlink">
             About
-          </NavLink>
-          <NavLink to="skill" className="navlink">
+          </a>
+          <a href="#skills" className="navlink">
             My Skills
-          </NavLink>
-          <NavLink to="projects" className="navlink">
+          </a>
+          <a href="#projects" className="navlink">
             My Projects
-          </NavLink>
+          </a>
         </nav>
       ) : (
         <div id="menu-icon">

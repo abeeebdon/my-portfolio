@@ -21,12 +21,13 @@ body {
   background: $bg;
   color: $tc;
   max-width: 1600px;
+  margin: 0 auto;
   margin-bottom: 6rem;
 }
 section {
   min-height: 80%;
   margin-top: 1rem;
-  padding: 10rem 9% 2rem;
+  padding-top: 5rem;
 }
 
 /* Header styling starts here
@@ -39,6 +40,7 @@ for Header*/
   top: 0;
   left: 0;
   width: 100%;
+  margin: 0 auto;
   padding: 2rem 9%;
   background: $bg;
   display: flex;
@@ -81,26 +83,19 @@ for Header*/
 /* header styling ends here */
 /* header styling ends here */
 /* header styling ends here */
-/* header styling ends here */
-/* header styling ends here */
-/* header styling ends here */
 
 /* Home or landing page  styling starts her (landing page) */
 /* Home or landing page  styling starts her (landing page) */
-/* Home or landing page  styling starts her (landing page) */
-/* Home or landing page  styling starts her (landing page) */
-/* Home or landing page  styling starts her (landing page) */
-/* Home or landing page  styling starts her (landing page) */
-/* Home or landing page  styling starts her (landing page) */
+
 .home {
+  margin: 0 auto;
+  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 5rem;
-  padding-top: 8rem;
-  // margin-left: 1rem;
+
   .home-content {
-    // padding-left: 1rem;
     h1 {
       font-size: 5.6rem;
       font-weight: 700;
@@ -111,7 +106,6 @@ for Header*/
       font-size: 1.6rem;
       margin: 1rem;
     }
-
     h3 {
       font-size: 3.2rem;
       font-weight: 700;
@@ -120,22 +114,7 @@ for Header*/
         margin-bottom: 2rem;
       }
     }
-    // .btn {
-    //   display: inline-block;
-    //   margin: 0px 1rem;
-    //   padding: 1rem 2.8rem;
-    //   background: $mc;
-    //   border-radius: 1rem;
-    //   font-size: 1.6rem;
-    //   box-shadow: 0 0 1rem $mc;
-    //   color: rgb(206, 186, 186);
-    //   transition: 0.5 ease;
-    //   margin-top: 1rem;
 
-    // &:hover {
-    //   box-shadow: none;
-    //   color: $bg;
-    // }
     .github-link {
       margin: 2rem 0px;
       padding: 1rem;
@@ -173,9 +152,6 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 8rem 9% 2rem;
-  // background: $sbg;
-  min-height: 80vh;
   .about-content {
     color: $sbg;
     opacity: 100%;
@@ -205,7 +181,8 @@ span {
 }
 .portfolio {
   background: $bg;
-
+  max-width: 1450px;
+  margin: 0 auto;
   h2 {
     margin-bottom: 4rem;
   }

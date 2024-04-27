@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <div className="home-content">
         <h3>Hello, it's Me</h3>
         <h1>Abeeb Maroof</h1>

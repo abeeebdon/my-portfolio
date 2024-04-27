@@ -1,7 +1,7 @@
-import { skills } from '../Data'
+import { skills } from './Data'
 const Skills = () => {
   return (
-    <section className="home skills">
+    <section id="skills" className="home skills">
       <div className="my-skills">
         <h1 className="heading" style={{ color: 'red' }}>
           My Skills
