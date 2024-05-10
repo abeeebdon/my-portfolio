@@ -3,11 +3,9 @@ $sbg: #323946;
 $tc: #000010;
 $mc: rgba(247, 5, 5, 0.849);
 
-::-webkit-scrollbar {
-  border: none;
-}
 :root {
   color-scheme: light dark;
+  width: 100vw;
 }
 
 * {
@@ -28,15 +26,17 @@ html {
 body {
   background-color: light-dark ($bg, $sbg);
   color: light-dark ($tc, $bg);
-  max-width: 1600px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
 }
-// section {
-//   min-height: 80%;
-//   margin-top: 1rem;
-//   padding-top: 5rem;
-// }
+section {
+  min-height: 80%;
+  margin-top: 1rem;
+  padding-top: 7rem;
+}
 
 /* Header styling starts here
 
@@ -44,7 +44,6 @@ body {
 for Header*/
 
 .header {
-  max-width: 1440px;
   position: fixed;
   top: 0;
   left: 0;
@@ -52,15 +51,19 @@ for Header*/
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 5;
-
-  .logo {
-    font-size: 2.5rem;
-    font-weight: 600;
-    cursor: default;
+  background-color: light-dark(#ffffff, #000010);
+  .header-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 600;
+      cursor: default;
+    }
   }
 }
 #menu-icon {
@@ -101,7 +104,7 @@ for Header*/
   align-items: center;
   gap: 5rem;
   padding: 1rem;
-  padding-top: 6rem;
+  padding-top: 7rem;
 
   .home-content {
     h1 {
@@ -167,6 +170,8 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
   .about-content {
     opacity: 100%;
     h2 {
@@ -262,42 +267,47 @@ span {
 /* Styling the footer */
 
 .footer {
-  display: flex;
   position: fixed;
   bottom: 0%;
+  left: 0%;
+  right: 0%;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 0.1rem 9%;
-
-  .footer-text {
-    p {
-      font-size: 1.6rem;
+  background-color: light-dark(#ffffff, #000010);
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    .footer-text {
+      p {
+        font-size: 1.6rem;
+      }
     }
-  }
-  .social-media {
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    a {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      height: 4rem;
-      width: 4rem;
-      background: transparent;
-      border: 0.2rem solid $mc;
-      border-radius: 50%;
-      font-size: 2rem;
-      color: $mc;
-      margin: 1.5rem 1.5rem 1.5rem 0;
-    }
+    .social-media {
+      height: fit-content;
+      padding: 0;
+      margin: 0;
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 4rem;
+        background: transparent;
+        border: 0.2rem solid $mc;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: $mc;
+        margin: 1.5rem 1.5rem 1.5rem 0;
+      }
 
-    a:hover {
-      background: $mc;
-      color: $bg;
-      box-shadow: 0 0 1rem $mc;
+      a:hover {
+        background: $mc;
+        color: $bg;
+        box-shadow: 0 0 1rem $mc;
+      }
     }
   }
 }
