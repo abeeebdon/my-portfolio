@@ -68,6 +68,7 @@ for Header*/
 }
 #menu-icon {
   font-size: 3.6rem;
+  color: light-black(black, red);
 }
 .navbar {
   display: flex;
@@ -420,7 +421,12 @@ aside {
     margin-top: 4rem;
   }
   .home {
+    margin-top: 8rem;
     flex-direction: column;
+  }
+
+  .about-img {
+    display: none;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -438,14 +444,6 @@ aside {
   }
   .about {
     flex-direction: column-reverse;
-  }
-  .about-img {
-    min-width: 100vw;
-    display: grid;
-    place-content: center;
-    img {
-      width: 100vw;
-    }
   }
 
   .portfolio h2 {
