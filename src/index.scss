@@ -3,6 +3,11 @@ $sbg: #323946;
 $tc: #000010;
 $mc: rgba(247, 5, 5, 0.849);
 
+:root {
+  color-scheme: light dark;
+  width: 100vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +16,7 @@ $mc: rgba(247, 5, 5, 0.849);
   outline: none;
   border: none;
   scroll-behavior: smooth;
+  z-index: 1;
 }
 
 html {
@@ -18,16 +24,18 @@ html {
 }
 
 body {
-  background: $bg;
-  color: $tc;
-  max-width: 1600px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+  background-color: light-dark ($bg, $sbg);
+  color: light-dark ($tc, $bg);
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
 }
 section {
   min-height: 80%;
   margin-top: 1rem;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 /* Header styling starts here
@@ -39,25 +47,27 @@ for Header*/
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 9%;
-  background: $bg;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-
-  .logo {
-    font-size: 2.5rem;
-    color: $tc;
-    font-weight: 600;
-    cursor: default;
+  padding: 1rem;
+  z-index: 5;
+  background-color: light-dark(#ffffff, #000010);
+  .header-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 600;
+      cursor: default;
+    }
   }
 }
 #menu-icon {
   font-size: 3.6rem;
-  color: $tc;
 }
 .navbar {
   display: flex;
@@ -67,7 +77,6 @@ for Header*/
 
   .navlink {
     font-size: 1.7rem;
-    color: $tc;
     margin-left: 4rem;
     transition: 0.3s;
   }
@@ -88,12 +97,14 @@ for Header*/
 /* Home or landing page  styling starts her (landing page) */
 
 .home {
-  margin: 0 auto;
   max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  padding: 1rem;
+  padding-top: 7rem;
 
   .home-content {
     h1 {
@@ -118,6 +129,7 @@ for Header*/
     .github-link {
       margin: 2rem 0px;
       padding: 1rem;
+      padding-left: 0rem;
       a {
         background: $mc;
         width: 100%;
@@ -135,9 +147,15 @@ for Header*/
         &:hover {
           color: rgb(206, 186, 186);
           box-shadow: none;
-          font-size: 2rem;
+          font-size: 1.7rem;
         }
       }
+    }
+  }
+  .image {
+    height: 70%;
+    img {
+      height: 100%;
     }
   }
 }
@@ -152,8 +170,9 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
   .about-content {
-    color: $sbg;
     opacity: 100%;
     h2 {
       text-align: left;
@@ -175,12 +194,7 @@ span {
   font-size: 4.5rem;
 }
 
-.skills {
-  padding-bottom: 4rem;
-  margin-bottom: 8rem;
-}
 .portfolio {
-  background: $bg;
   max-width: 1450px;
   margin: 0 auto;
   h2 {
@@ -253,58 +267,73 @@ span {
 /* Styling the footer */
 
 .footer {
-  display: flex;
   position: fixed;
   bottom: 0%;
-  width: 100vw;
-  justify-content: space-between;
-  align-items: center;
+  left: 0%;
+  right: 0%;
+  width: 100%;
   flex-wrap: wrap;
-  padding: 0.1rem 9%;
-  background: $bg;
+  background-color: light-dark(#ffffff, #000010);
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    .footer-text {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .social-media {
+      height: fit-content;
+      padding: 0;
+      margin: 0;
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 4rem;
+        background: transparent;
+        border: 0.2rem solid $mc;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: $mc;
+        margin: 1.5rem 1.5rem 1.5rem 0;
+      }
 
-  .footer-text {
-    p {
-      font-size: 1.6rem;
+      a:hover {
+        background: $mc;
+        color: $bg;
+        box-shadow: 0 0 1rem $mc;
+      }
     }
   }
-  .social-media {
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    a {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      height: 4rem;
-      width: 4rem;
-      background: transparent;
-      border: 0.2rem solid $mc;
-      border-radius: 50%;
-      font-size: 2rem;
-      color: $mc;
-      margin: 1.5rem 1.5rem 1.5rem 0;
-    }
-
-    a:hover {
-      background: $mc;
-      color: $bg;
-      box-shadow: 0 0 1rem $mc;
-    }
-  }
+}
+.skills {
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .grid {
   display: grid;
-  height: 80vh;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   .grid-image {
+    background: none;
     width: fit-content;
     padding: 10px;
     img {
       width: 200px;
       height: 200px;
+      border-radius: 50%;
     }
     p {
       text-align: center;

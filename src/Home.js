@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </div>
       <div className="image">
-        <img src="pics.jpeg" alt="my_pics" className="img" />
+        <img src="./pics-removebg-preview.png" alt="my_pics" className="img" />
       </div>
     </section>
   )
