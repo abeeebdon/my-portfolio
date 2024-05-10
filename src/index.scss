@@ -106,7 +106,12 @@ for Header*/
   gap: 5rem;
   padding: 1rem;
   padding-top: 7rem;
-
+  @media (max-width: 800px) {
+    margin-top: 8rem;
+  }
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
   .home-content {
     h1 {
       font-size: 5.6rem;
@@ -124,6 +129,11 @@ for Header*/
 
       &:nth-of-type(2) {
         margin-bottom: 2rem;
+      }
+    }
+    @media (max-width: 760px) {
+      h3 {
+        font-size: 2.6rem;
       }
     }
 
@@ -196,7 +206,7 @@ span {
 }
 
 .portfolio {
-  max-width: 1450px;
+  max-width: 1440px;
   margin: 0 auto;
   h2 {
     margin-bottom: 4rem;
@@ -208,6 +218,20 @@ span {
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 8rem;
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+  }
+  @media (max-width: 617px) {
+    padding-bottom: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+  @media (max-width: 450px) {
+    padding-bottom: 8rem;
+    grid-template-columns: 1fr;
+  }
   .portfoli-box {
     position: relative;
     border-radius: 2rem;
@@ -275,15 +299,27 @@ span {
   width: 100%;
   flex-wrap: wrap;
   background-color: light-dark(#ffffff, #000010);
+
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+    @media (max-width: 991px) {
+      padding: 0.1rem 3%;
+    }
+    @media (max-width: 450px) {
+      display: block;
+      text-align: left;
+    }
     .footer-text {
       p {
         font-size: 1.6rem;
+
+        @media (max-width: 450px) {
+          text-align: left;
+        }
       }
     }
     .social-media {
@@ -313,35 +349,61 @@ span {
   }
 }
 .skills {
-  display: flex;
   max-width: 1440px;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 1rem;
   margin-bottom: 8rem;
   padding-bottom: 4rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  .grid-image {
-    background: none;
-    width: fit-content;
-    padding: 10px;
-    img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
+  @media (max-width: 760px) {
+    padding-bottom: 0rem;
+    display: block;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 760px) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    p {
-      text-align: center;
-      font-size: 2rem;
+    @media (max-width: 450px) {
+      display: block;
+      margin: 1.5rem 0px;
+    }
+    .grid-image {
+      background: none;
+      width: fit-content;
+      padding: 10px;
+
+      @media (max-width: 450px) {
+        margin: 1rem 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+      }
+      @media (max-width: 350px) {
+        display: block;
+      }
+      img {
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+        max-height: 200px;
+        border-radius: 50%;
+      }
+      p {
+        text-align: center;
+        font-size: 2rem;
+      }
     }
   }
 }
+
 aside {
   padding: 1rem;
 }
@@ -404,13 +466,6 @@ aside {
     padding: 2rem 3% 2rem;
   }
 
-  .portfolio {
-    margin-top: 12rem;
-  }
-
-  .footer {
-    padding: 0.1rem 3%;
-  }
   .img {
     width: 35vw;
   }
@@ -420,24 +475,11 @@ aside {
   section {
     margin-top: 4rem;
   }
-  .home {
-    margin-top: 8rem;
-    flex-direction: column;
-  }
 
   .about-img {
     display: none;
   }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 95vw;
-  }
-  .home-content h3 {
-    font-size: 2.6rem;
-  }
-  .home-content h {
-    font-size: 5rem;
-  }
+
   .img {
     width: 90vw;
     margin-top: 1rem;
@@ -449,45 +491,29 @@ aside {
   .portfolio h2 {
     margin-bottom: 3rem;
   }
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
-  }
+
   .projectPage {
     display: block;
   }
 }
 @media (max-width: 617px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
-  }
   .projectPage {
     display: block;
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media (max-width: 450px) {
   .home-img img {
     width: 90vw;
   }
   .about-img img {
     width: 100vw;
   }
-  .footer {
-    flex-direction: column-reverse;
-  }
+
   .footer p {
     text-align: center;
     margin-top: 2rem;
@@ -495,17 +521,5 @@ aside {
   .social-media a {
     width: 2rem;
     height: 2rem;
-  }
-  .grid {
-    display: block;
-  }
-  .grid-image {
-    text-align: center;
-    width: 90vw;
-    margin: 0 auto;
-  }
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
   }
 }
