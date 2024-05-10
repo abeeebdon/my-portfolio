@@ -8,6 +8,9 @@ $mc: rgba(247, 5, 5, 0.849);
   width: 100vw;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +29,6 @@ html {
 body {
   background-color: light-dark ($bg, $sbg);
   color: light-dark ($tc, $bg);
-  ::-webkit-scrollbar {
-    display: none;
-  }
 
   scrollbar-width: none;
 }
