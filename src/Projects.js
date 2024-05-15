@@ -7,11 +7,11 @@ const Projects = () => {
         <span>Projects</span>
       </h2>
       <div className="portfolio-container">
-        {project.map((proj) => {
+        {project.map((proj, index) => {
           const { name, image, link } = proj
 
           return (
-            <div className="portfoli-box">
+            <div key={index} className="portfoli-box">
               <img src={image} alt={image} />
               <div className="portfolio-layer">
                 <p>{name}</p>

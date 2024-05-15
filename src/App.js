@@ -7,8 +7,9 @@ import Projects from './Projects'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import useWindowSize from './hooks/useWindowSize'
+import About from './About'
 
-const AboutPage = lazy(() => import('./About'))
+const PPage = lazy(() => import('./Projects'))
 
 function App() {
   const [sideBar, setSideBar] = useState(false)
@@ -28,9 +29,9 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Home />
         {/* Render the lazy-loaded component */}
-        <AboutPage />
+        <About />
         <Skills />
-        <Projects />
+        <PPage />
         <Footer />
       </Suspense>
     </main>
