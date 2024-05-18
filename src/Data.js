@@ -28,7 +28,7 @@ export const project = [
     id: 5,
     name: 'Tea Cup',
     image: '/img/drawers.jpg',
-    link: 'https://femp-teacup.netlify.app/',
+    link: 'https://abeebdon-teacup.netlify.app/',
   },
 ]
 
