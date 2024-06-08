@@ -22,7 +22,7 @@ function App() {
     <main>
       <Header handleClick={handleClick} sideBar={sideBar} width={width} />
       {sideBar && width <= 760 ? (
-        <Sidebar handleClick={handleClick} />
+        <Sidebar handleClick={handleClick} setSideBar={setSideBar} />
       ) : (
         <div style={{ color: 'red' }}></div>
       )}

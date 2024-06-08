@@ -7,7 +7,7 @@ const Skills = () => {
           My Skills
         </h1>
       </div>
-      <div className="grid">
+      <div className="flex">
         {skills.map((skill) => {
           return (
             <div className="grid-image" key={skill.id}>
