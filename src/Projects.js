@@ -15,7 +15,7 @@ const Projects = () => {
               <img src={image} alt={image} />
               <div className="portfolio-layer">
                 <p>{name}</p>
-                <a href={link} target="_blank">
+                <a href={link} target="_blank" rel="noreferrer">
                   <FaChevronUp />
                 </a>
               </div>
