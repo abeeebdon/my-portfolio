@@ -37,7 +37,7 @@ export const skills = [
   { id: 2, image: './img/css.png', name: 'CSS' },
   { id: 3, image: './img/javas.jfif', name: 'JAVASCRIPT' },
   { id: 4, image: './img/react_image.png', name: 'REACT' },
-  { id: 5, image: './img/Next.png', name: 'Next' },
+  { id: 5, image: './img/Next.png', name: 'NEXT' },
   { id: 6, image: './img/bootstrap_image.jpg', name: 'BOOTSTRAP' },
   { id: 7, image: './img/tailwind_image.png', name: 'TAILWIND' },
   { id: 8, image: './img/SASS.png', name: 'SASS' },
