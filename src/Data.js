@@ -1,34 +1,34 @@
 export const project = [
   {
     id: 1,
-    name: 'Purchase Your Game',
-    image: '/img/desktop-preview.jpg',
-    link: 'https://buy-game.netlify.app/',
+    name: 'Lasom center',
+    image: '/img/lasom.png',
+    link: 'https://lasom.vercel.app/',
   },
   {
     id: 2,
-    name: 'Space Tour',
-    image: '/img/space.jpg',
-    link: 'https://space-tour-abeebdon.netlify.app/',
-  },
-  {
-    id: 3,
     name: 'Sushi Food App',
     image: '/img/Majestic Sushi.png',
     link: 'https://majestic-sushi.netlify.app',
   },
   {
+    id: 3,
+    name: 'Purchase Your Game',
+    image: '/img/desktop-preview.jpg',
+    link: 'https://buy-game.netlify.app/',
+  },
+  {
     id: 4,
-    name: 'Fylo Landing Page',
-    image: '/img/desktop.jpg',
-    link: 'https://abeebdon-fylo-landing-page.netlify.app/',
+    name: 'Space Tour',
+    image: '/img/space.jpg',
+    link: 'https://space-tour-abeebdon.netlify.app/',
   },
 
   {
     id: 5,
-    name: 'Tea Cup',
-    image: '/img/drawers.jpg',
-    link: 'https://abeebdon-teacup.netlify.app/',
+    name: 'Fylo Landing Page',
+    image: '/img/desktop.jpg',
+    link: 'https://abeebdon-fylo-landing-page.netlify.app/',
   },
 ]
 
