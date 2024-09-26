@@ -1,4 +1,5 @@
 import { skills } from './Data'
+import FadeComponent from './FadeComponent'
 const Skills = () => {
   return (
     <section id="skills" className="skills">
@@ -8,12 +9,14 @@ const Skills = () => {
         </h1>
       </div>
       <div className="flex">
-        {skills.map((skill) => {
+        {skills.map((skill, index) => {
           return (
-            <div className="grid-image" key={skill.id}>
-              <img src={skill.image} alt={skill.name} />
-              <p>{skill.name}</p>
-            </div>
+            <FadeComponent key={index} index={index}>
+              <div className="grid-image">
+                <img src={skill.image} alt={skill.name} />
+                <p>{skill.name}</p>
+              </div>
+            </FadeComponent>
           )
         })}
       </div>

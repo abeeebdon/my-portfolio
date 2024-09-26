@@ -34,8 +34,9 @@ body {
 }
 section {
   min-height: 80%;
-  margin-top: 1rem;
-  padding-top: 7rem;
+  margin-top: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 /* Header styling starts here
@@ -116,12 +117,13 @@ for Header*/
     h1 {
       font-size: 5.6rem;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 2;
     }
 
     p {
       font-size: 1.6rem;
       margin: 1rem;
+      margin-left: 0;
     }
     h3 {
       font-size: 3.2rem;
@@ -151,15 +153,10 @@ for Header*/
         border-radius: 1rem;
         font-size: 1.5rem;
         text-decoration: none;
-        color: rgb(206, 186, 186);
-        transition: all 0.5s;
-        transition-timing-function: ease-in-out;
+        color: white;
 
         &:hover {
-          color: $bg;
-          box-shadow: 0.5 5px red;
-          font-size: 2rem;
-          padding: 1.5rem 2rem;
+          opacity: 0.7;
         }
       }
     }
@@ -179,13 +176,14 @@ span {
 
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
   max-width: 1440px;
   margin: 0 auto;
 
   .about-content {
+    flex-basis: 50%;
     opacity: 100%;
     h2 {
       text-align: left;
@@ -360,11 +358,13 @@ span {
 .skills {
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 1rem;
+  padding-top: 2rem;
   margin-bottom: 8rem;
   padding-bottom: 4rem;
   .my-skills {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .flex {
@@ -549,4 +549,9 @@ aside {
     width: 2rem;
     height: 2rem;
   }
+}
+
+.about-img {
+  flex-basis: 20%;
+  width: 100%;
 }
