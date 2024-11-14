@@ -1,4 +1,8 @@
-$bg: #ffffff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$bg: #f7dbd4;
 $sbg: #323946;
 $tc: #000010;
 $mc: rgba(247, 5, 5, 0.849);
@@ -27,21 +31,23 @@ html {
 }
 
 body {
-  background-color: light-dark ($bg, $sbg);
-  color: light-dark ($tc, $bg);
+  background-color: light-dark($bg, #000010);
 
+  color: light-dark ($tc, $bg);
   scrollbar-width: none;
 }
 section {
-  min-height: 80%;
+  min-height: 90%;
   margin-top: 2rem;
+  padding: 1rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
+.text {
+  color: light-dark ($tc, $bg);
+}
 /* Header styling starts here
-
-
 for Header*/
 
 .header {
@@ -53,7 +59,7 @@ for Header*/
   margin: 0 auto;
   padding: 1rem;
   z-index: 5;
-  background-color: light-dark(#ffffff, #000010);
+  background-color: light-dark($bg, #000010);
   .header-content {
     max-width: 1440px;
     margin: 0 auto;
@@ -235,10 +241,11 @@ span {
   .portfoli-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 0.5rem $bg;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     overflow: hidden;
     display: flex;
-    height: 250px;
+    max-height: 250px;
 
     img {
       width: 100%;
@@ -294,7 +301,7 @@ span {
 .footer {
   width: 100%;
   flex-wrap: wrap;
-  background-color: light-dark(#ffffff, #000010);
+  background-color: light-dark($bg, #000010);
 
   .footer-content {
     display: flex;
@@ -367,11 +374,15 @@ span {
     margin-bottom: 2rem;
   }
 
-  .flex {
+  .skills-con {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 450px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     .grid-image {
       background: none;
       width: fit-content;
@@ -384,10 +395,10 @@ span {
         margin-left: 10%;
         width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-start;
         gap: 25%;
-        text-align: left;
       }
       @media (max-width: 350px) {
         display: block;
@@ -534,9 +545,6 @@ aside {
     font-size: 50%;
   }
 
-  .home-img img {
-    width: 90vw;
-  }
   .about-img img {
     width: 100vw;
   }
