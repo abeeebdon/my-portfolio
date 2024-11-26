@@ -8,7 +8,6 @@ $tc: #000010;
 $mc: rgba(247, 5, 5, 0.849);
 
 :root {
-  color-scheme: light dark;
   width: 100vw;
 }
 
@@ -31,9 +30,9 @@ html {
 }
 
 body {
-  background-color: light-dark($bg, #000010);
+  background-color: #000010;
 
-  color: light-dark ($tc, $bg);
+  color: $bg;
   scrollbar-width: none;
 }
 section {
@@ -44,9 +43,6 @@ section {
   padding-bottom: 8rem;
 }
 
-.text {
-  color: light-dark ($tc, $bg);
-}
 /* Header styling starts here
 for Header*/
 
@@ -59,7 +55,7 @@ for Header*/
   margin: 0 auto;
   padding: 1rem;
   z-index: 5;
-  background-color: light-dark($bg, #000010);
+  background-color: $sbg;
   .header-content {
     max-width: 1440px;
     margin: 0 auto;
@@ -75,7 +71,7 @@ for Header*/
 }
 #menu-icon {
   font-size: 3.6rem;
-  color: light-black(black, red);
+  color: red;
 }
 .navbar {
   display: flex;
@@ -301,7 +297,7 @@ span {
 .footer {
   width: 100%;
   flex-wrap: wrap;
-  background-color: light-dark($bg, #000010);
+  background-color: #000010;
 
   .footer-content {
     display: flex;
