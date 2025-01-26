@@ -45,10 +45,10 @@ export const project = [
     id: 5,
     name: 'Fylo Landing Page',
     image: '/img/desktop.jpg',
-    link: 'https://abeebdon-fylo-landing-page.netlify.app/',
+    link: 'https://fylo-don.vercel.app/',
     details:
       'Fylo landing page is simple landing page. It is a practice project from frontend Mentor . ',
-    stack: 'It is built with React JS, Javascript, Vanilla CSS ',
+    stack: 'It is built with React JS, Typescript,Tailwind CSS ',
   },
 ]
 
