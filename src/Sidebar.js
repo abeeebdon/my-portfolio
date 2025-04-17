@@ -1,20 +1,27 @@
-import { FaTimes } from 'react-icons/fa'
+import { FaTimes } from "react-icons/fa";
+import { buttons } from "./Data";
 
 const Sidebar = ({ handleClick, setSideBar }) => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <aside>
-      <article>
-        <div className="icon-wrapper" onClick={() => setSideBar(false)}>
-          <FaTimes className="cancel-icon" />
-        </div>
-        <div className="sidebar" onClick={handleClick}>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skill">My Skills</a>
-          <a href="#projects">Projects</a>
-        </div>
-      </article>
+      <div className="icon-wrapper">
+        <FaTimes className="cancel-icon" onClick={() => setSideBar(false)} />
+      </div>
+      <div className="sidebar" onClick={handleClick}>
+        {buttons.map((button) => (
+          <button key={button.id} onClick={() => scrollToSection(button.id)}>
+            {button.text}
+          </button>
+        ))}
+      </div>
     </aside>
-  )
-}
-export default Sidebar
+  );
+};
+export default Sidebar;

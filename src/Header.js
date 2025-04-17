@@ -1,37 +1,40 @@
-import { FaAngleUp, FaBars } from 'react-icons/fa'
-const Header = ({ handleClick, sideBar, width }) => {
+import { FaAngleUp, FaBars } from "react-icons/fa";
+import { buttons } from "./Data";
+
+const Header = ({ handleClick, sideBar }) => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="header">
       <div className="header-content">
-        <a href="#home" className="logo">
+        <button onClick={() => scrollToSection("home")} className="logo">
           <h2>
             Abeeb<span>don</span>
           </h2>
-        </a>
-        {width >= 760 ? (
-          <nav className="navbar">
-            <a href="#home" className="navlink">
-              Home
-            </a>
-            <a href="#about" className="navlink">
-              About
-            </a>
-            <a href="#skills" className="navlink">
-              My Skills
-            </a>
-            <a href="#projects" className="navlink">
-              My Projects
-            </a>
-          </nav>
-        ) : (
-          <div id="menu-icon">
-            <div onClick={handleClick}>
-              {sideBar ? <FaAngleUp /> : <FaBars />}
-            </div>
+        </button>
+        <nav className="navbar">
+          {buttons.map((button) => (
+            <button
+              key={button.id}
+              onClick={() => scrollToSection(button.id)}
+              className="navlink"
+            >
+              {button.text}
+            </button>
+          ))}
+        </nav>
+        <div id="menu-icon">
+          <div onClick={handleClick}>
+            {sideBar ? <FaAngleUp /> : <FaBars />}
           </div>
-        )}
+        </div>
       </div>
     </header>
-  )
-}
-export default Header
+  );
+};
+export default Header;

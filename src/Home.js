@@ -28,16 +28,10 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div>
-        <div className="image">
-          <img
-            src="./pics-removebg-preview.png"
-            alt="my_pics"
-            className="img"
-          />
-        </div>
+      <div className="image">
+        <img src="./pics-removebg-preview.png" alt="my_pics" className="img" />
       </div>
     </section>
-  )
-}
-export default Home
+  );
+};
+export default Home;
