@@ -15,7 +15,7 @@ function App() {
     setSideBar(!sideBar);
   };
   return (
-    <main>
+    <main className="bg-portfolio-tc text-portfolio-bg">
       <Header handleClick={handleClick} sideBar={sideBar} />
       {sideBar && <Sidebar handleClick={handleClick} setSideBar={setSideBar} />}
       <Home />

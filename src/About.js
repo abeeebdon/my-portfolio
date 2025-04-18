@@ -1,14 +1,17 @@
 const About = () => {
   return (
-    <section className="about" id="about">
-      <div className="about-img">
-        <img src="/abeeb.png" alt="pics" className="img" />
+    <section
+      id="about"
+      className="max-w-screen-xl px-4 mx-auto flex justify-around items-center gap-8 max-[760px]:flex-col"
+    >
+      <div className="basis-1/5 w-full md:basis-auto md:w-[90vw] lg:w-[35vw] xl:w-[40vw] max-[760px]:mt-4">
+        <img src="/abeeb.png" alt="pics" className="w-full h-auto" />
       </div>
-      <div className="about-content">
-        <p className="max-w-[1440px] px-4 text-4xl font-bold mx-auto ">
-          About <span className="text-red-600">Me</span>
+      <div className="basis-1/2">
+        <p className="text-4xl font-bold">
+          About <span className="text-portfolio-mc">Me</span>
         </p>
-        <p style={{ fontSize: "20px" }}>
+        <p className="text-xl leading-relaxed my-8 mb-12">
           I am Abeeb Maroof, a motivated and dedicated Frontend Developer with a
           passion for crafting intuitive and visually appealing user interfaces
           for both web applications and mobile devices. <br />
@@ -21,11 +24,12 @@ const About = () => {
           I enjoy taking on new challenges and collaborating with clients to
           bring ideas to life through high quality user interface.
         </p>
-        <div className="github-link">
+        <div className="my-5 p-4 pl-0">
           <a
             href="https://github.com/abeeebdon"
             target="_blank"
             rel="noreferrer"
+            className="inline-block bg-portfolio-mc text-white px-8 py-4 text-center m-4 rounded-2xl text-xl hover:opacity-70"
           >
             GITHUB
           </a>
@@ -33,6 +37,7 @@ const About = () => {
             target="_blank"
             href="https://docs.google.com/document/d/13JHMJn6lYmiokmuwLlU12pZQT1rPRrdtH9HT_n7w6c8/edit?usp=drivesdk"
             rel="noreferrer"
+            className="inline-block bg-portfolio-mc text-white px-8 py-4 text-center m-4 rounded-2xl text-xl hover:opacity-70"
           >
             MY CV
           </a>

@@ -1,4 +1,5 @@
-import { FaHtml5 } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+
 export const project = [
   {
     id: 1,
@@ -16,7 +17,7 @@ export const project = [
     image: "/img/lasom.png",
     link: "https://lasom.vercel.app/",
     details:
-      "Lasom is an online store specialized in the sales of women jewelry. Features include browsing, shopping and checkout.",
+      "Lasom is a jewelry e-commerce platform that offers timeless jewelry collections to elevate beauty, featuring categories like earrings, necklaces, rings, and bracelets, and aims to enhance user experience to increase customer satisfaction and drive business growth.",
     stack:
       "Lasom is developed using react js with vite, typescript, shadcn, tailwindcss, firebase, Redux, Stripe",
   },
@@ -41,9 +42,26 @@ export const project = [
     stack: "It is built with React JS, Typescript,Tailwind CSS ",
   },
 ];
-
+export const socials = [
+  {
+    href: "https://www.facebook.com/abeeb.maroof",
+    icon: <FaFacebook />,
+  },
+  {
+    href: "https://www.twitter.com/AbeebMaroof",
+    icon: <FaTwitter />,
+  },
+  {
+    href: "https://www.linkedin.com/in/abeebmaroof/",
+    icon: <FaLinkedin />,
+  },
+  {
+    href: "https://github.com/abeeebdon",
+    icon: <FaGithub />,
+  },
+];
 export const skills = [
-  { id: 1, image: "./img/html.png", iconSrc: <FaHtml5 />, name: " HTML" },
+  { id: 1, image: "./img/html.png", name: " HTML" },
   { id: 2, image: "./img/css.png", name: "CSS" },
   { id: 3, image: "./img/javas.jfif", name: "JAVASCRIPT" },
   { id: 4, image: "./img/react_image.png", name: "REACT" },
