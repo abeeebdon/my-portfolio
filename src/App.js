@@ -16,9 +16,15 @@ function App() {
   };
   return (
     <main className="bg-portfolio-tc text-portfolio-bg">
-      <Header handleClick={handleClick} sideBar={sideBar} />
       {sideBar && <Sidebar handleClick={handleClick} setSideBar={setSideBar} />}
-      <Home />
+      <div
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        className=" bg-cover bg-center bg-no-repeat"
+      >
+        <div className="absolute inset-0 bg-black/20" aria-hidden="true"></div>
+        <Header handleClick={handleClick} sideBar={sideBar} />
+        <Home />
+      </div>
       <About />
       {/* <Experience /> */}
       <Skills />

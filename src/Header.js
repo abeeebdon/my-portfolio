@@ -10,13 +10,13 @@ const Header = ({ handleClick, sideBar }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full p-4 z-10 bg-portfolio-sbg lg:px-[3%] lg:py-4">
+    <header className="fixed top-0 left-0 right-0 w-full p-4 z-50 bg-blue-950 lg:px-[3%] lg:py-4">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <button
           onClick={() => scrollToSection("home")}
           className="text-4xl font-semibold cursor-default"
         >
-          <h2>
+          <h2 className="font-semibold">
             Abeeb<span className="text-portfolio-mc">don</span>
           </h2>
         </button>

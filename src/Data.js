@@ -17,7 +17,7 @@ export const project = [
     image: "/img/lasom.png",
     link: "https://lasom.vercel.app/",
     details:
-      "Lasom is a jewelry e-commerce platform that offers timeless jewelry collections to elevate beauty, featuring categories like earrings, necklaces, rings, and bracelets, and aims to enhance user experience to increase customer satisfaction and drive business growth.",
+      "Lasom is a jewelry e-commerce platform that offers timeless jewelry collections to elevate beauty, featuring categories like earrings, necklaces, rings, and others",
     stack:
       "Lasom is developed using react js with vite, typescript, shadcn, tailwindcss, firebase, Redux, Stripe",
   },

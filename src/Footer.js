@@ -4,7 +4,7 @@ const Footer = () => {
   const time = new Date();
   const year = time.getFullYear();
   return (
-    <footer id="footer" className="w-full bg-portfolio-tc py-8">
+    <footer id="footer" className="w-full py-10">
       <div className="max-w-screen-xl  mx-auto flex md:flex-row flex-col gap-4 flex-wrap justify-between md:items-center px-4 lg:px-[3%] ">
         <p className="text-xl md:text-left">
           Copyright &copy; {year} by{" "}

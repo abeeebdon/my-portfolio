@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Keep essential base styles if needed */
 ::-webkit-scrollbar {
   display: none;
 }
 
 * {
   scroll-behavior: smooth;
-  /* Removed other resets as Tailwind handles them */
 }
 
 body {
   scrollbar-width: none; /* For Firefox */
-  /* Removed background/color as it's applied in App.js */
 }
