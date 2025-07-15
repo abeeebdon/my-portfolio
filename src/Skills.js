@@ -2,19 +2,20 @@ import { skills } from "./Data";
 
 const Skills = () => {
   return (
-    <div
-      style={{
-        backgroundImage: "linear-gradient(135deg, #101624, #1C2238)",
-      }}
-      className="bg-gradient-to-br from-[#101624] to-[#1C2238]"
-    >
+    <div className="">
       <section
         id="skills"
         className="max-w-screen-xl mx-auto md:h-screen p-4 pt-8  pb-16"
       >
-        <div className="mb-8 text-center">
-          <p className="text-3xl font-bold mb-0 p-0 text-portfolio-mc">
-            My Skills
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold">My Tech Stack</h2>
+          <div class="w-24 h-1 bg-yellow-500 dark:bg-yellow-400 mx-auto mt-4"></div>
+          <p class="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            Here is a collection of the key technologies and tools I work with.
+            This isn't just a list; it represents the toolkit I use to build
+            robust, scalable, and visually appealing applications. By hovering
+            over each skill, you can get a feel for the technologies I am most
+            proficient in.
           </p>
         </div>
 
@@ -23,16 +24,14 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className="w-fit p-4 my-4 max-[450px]:my-4 max-[450px]:w-full max-[450px]:flex max-[450px]:flex-col max-[450px]:justify-center max-[450px]:items-center max-[450px]:gap-4 max-[350px]:block"
+                className="skill-card flex flex-col items-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-transform hover:-translate-y-2"
               >
                 <img
                   src={image}
                   alt={name}
                   className="block w-[80px] h-[80px] rounded-full mx-auto mb-2"
                 />
-                <p className="text-center text-3xl max-[450px]:text-left">
-                  {name}
-                </p>
+                <h3 class="font-semibold">{name}</h3>
               </div>
             );
           })}

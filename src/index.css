@@ -10,6 +10,28 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg-light: #f8f7f4;
+  --text-light: #1f2937;
+  --accent-light: #f59e0b;
+  --accent-light-hover: #fbbf24;
+  --card-light: #ffffff;
+  --border-light: #e5e7eb;
+
+  --bg-dark: #111827;
+  --text-dark: #d1d5db;
+  --accent-dark: #fcd34d;
+  --accent-dark-hover: #fde047;
+  --card-dark: #1f2937;
+  --border-dark: #374151;
+}
 body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-family: "Inter", sans-serif;
   scrollbar-width: none; /* For Firefox */
+}
+.dark body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }

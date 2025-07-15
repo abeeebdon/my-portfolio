@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMoon } from "react-icons/fa";
 import { buttons } from "./Data";
 
 const Header = ({ handleClick, sideBar }) => {
@@ -10,30 +10,42 @@ const Header = ({ handleClick, sideBar }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full p-4 z-50 bg-blue-950 lg:px-[3%] lg:py-4">
+    <header className="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 p-4 lg:px-[3%] lg:py-4 bg-white dark:bg-gray-900 shadow-md">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+        {/* Logo */}
         <button
           onClick={() => scrollToSection("home")}
-          className="text-4xl font-semibold cursor-default"
+          className="text-4xl font-semibold text-gray-900 dark:text-white"
         >
-          <h2 className="font-semibold">
-            Abeeb<span className="text-portfolio-mc">don</span>
-          </h2>
+          Abeeb<span className="text-portfolio-mc">don</span>
         </button>
-        <nav className="flex justify-between gap-4 text-xl max-[760px]:hidden">
+
+        {/* Desktop Nav */}
+        <nav className="hidden max-[760px]:hidden md:flex items-center gap-8 text-lg">
           {buttons.map((button) => (
-            <button
+            <a
               key={button.id}
-              onClick={() => scrollToSection(button.id)}
-              className="text-xl ml-16 transition duration-300 hover:text-portfolio-mc"
+              href={`#${button.id}`}
+              className="transition duration-300 hover:text-portfolio-mc text-gray-800 dark:text-gray-200"
             >
               {button.text}
-            </button>
+            </a>
           ))}
+          {/* Theme Toggle */}
+          <button
+            id="theme-toggle"
+            title="Toggle Dark Mode"
+            aria-label="Toggle Theme"
+            className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
+          >
+            <FaMoon />
+          </button>
         </nav>
+
+        {/* Mobile Menu Icon */}
         <div
           onClick={handleClick}
-          className="cursor-pointer md:hidden text-3xl text-portfolio-mc"
+          className="md:hidden cursor-pointer text-3xl text-portfolio-mc"
         >
           {!sideBar && <FaBars />}
         </div>
@@ -41,4 +53,5 @@ const Header = ({ handleClick, sideBar }) => {
     </header>
   );
 };
+
 export default Header;
