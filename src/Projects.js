@@ -26,7 +26,7 @@ const Projects = () => {
               return (
                 <div
                   key={index}
-                  className="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                  className="project-card rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 cursor-pointer"
                 >
                   <img
                     src={image}
@@ -43,7 +43,7 @@ const Projects = () => {
                       {tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
+                          className="tags bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
                         >
                           {tag}
                         </span>

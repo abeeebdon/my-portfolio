@@ -7,7 +7,7 @@ const Experience = () => {
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold">Career Journey</h2>
         <div className="w-24 h-1 bg-yellow-500 dark:bg-yellow-400 mx-auto mt-4"></div>
-        <p className="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <p className="mt-6 text-lg max-w-3xl mx-auto">
           This timeline highlights my professional growth and the key roles I've
           held. It illustrates my journey through different companies and
           projects, showing the evolution of my skills and responsibilities over
@@ -23,7 +23,7 @@ const Experience = () => {
               <p className="font-semibold text-yellow-600 dark:text-yellow-400 mb-1">
                 {job.heading} | {job.date}
               </p>
-              <p className="text-gray-600 dark:text-gray-300">{job.info}</p>
+              <p className="">{job.info}</p>
             </div>
           );
         })}

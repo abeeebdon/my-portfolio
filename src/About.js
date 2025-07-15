@@ -24,7 +24,7 @@ const About = () => {
           />
         </div>
         <div className="basis-1/2">
-          <p className="text-base  text-gray-700 dark:text-gray-300 md:text-lg leading-relaxed my-6 ">
+          <p className="text-base  md:text-lg leading-relaxed my-6 ">
             Hello!, I am Abeeb, a passionate, and dedicated Software Developer
             with a passion for crafting intuitive and visually appealing user
             interfaces for both web applications and mobile devices. <br />

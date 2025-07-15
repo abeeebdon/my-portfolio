@@ -1,7 +1,7 @@
 import { FaBars, FaMoon } from "react-icons/fa";
 import { buttons } from "./Data";
 
-const Header = ({ handleClick, sideBar }) => {
+const Header = ({ handleClick, sideBar, setTheme }) => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -10,7 +10,10 @@ const Header = ({ handleClick, sideBar }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 p-4 lg:px-[3%] lg:py-4 bg-white dark:bg-gray-900 shadow-md">
+    <header
+      id="header"
+      className="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 p-4 lg:px-[3%] lg:py-4 bg-white dark:bg-gray-900 shadow-md"
+    >
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <button
@@ -35,6 +38,7 @@ const Header = ({ handleClick, sideBar }) => {
           <button
             id="theme-toggle"
             title="Toggle Dark Mode"
+            onClick={setTheme}
             aria-label="Toggle Theme"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
           >

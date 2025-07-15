@@ -24,7 +24,7 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className="skill-card flex flex-col items-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md transition-transform hover:-translate-y-2"
+                className="skill-card flex flex-col items-center p-6  rounded-lg shadow-md transition-transform hover:-translate-y-2"
               >
                 <img
                   src={image}
