@@ -53,6 +53,7 @@ const Projects = () => {
                       <a
                         id="modal-live-link"
                         href={link}
+                        rel="noreferrer"
                         target="_blank"
                         class="bg-yellow-500 text-white font-bold py-2 px-5 rounded-lg transition-transform hover:scale-105 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-yellow-300"
                       >
@@ -61,6 +62,7 @@ const Projects = () => {
                       <a
                         id="modal-repo-link"
                         href={github}
+                        rel="noreferrer"
                         target="_blank"
                         class="bg-gray-200 text-gray-800 font-bold py-2 px-5 rounded-lg transition-transform hover:scale-105 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
                       >
