@@ -114,73 +114,73 @@ export const buttons = [
   { id: "projects", text: "Projects" },
 ];
 
-const projectsData = [
-  {
-    title: "E-Commerce Platform",
-    summary:
-      "A full-featured e-commerce site with a modern UI, product filtering, and a seamless checkout process.",
-    image: "https://placehold.co/600x400/34d399/ffffff?text=E-Commerce",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    motivation:
-      "The goal was to build a highly performant, scalable, and user-friendly online store from scratch to understand the core complexities of e-commerce, from state management to payment integration.",
-    process:
-      "I started with designing the UI/UX in Figma, then developed the frontend with React for a dynamic user interface. The backend API was built with Node.js and Express, connected to a MongoDB database for product and user data. State management was handled with React Context API for the shopping cart.",
-    outcome:
-      "The result is a fully functional e-commerce platform that supports user authentication, product Browse and searching, cart management, and a mock checkout process. This project deepened my understanding of full-stack development and complex state management.",
-    liveLink: "#",
-    repoLink: "#",
-  },
-  {
-    title: "Task Management App",
-    summary:
-      "A responsive and interactive task management application with drag-and-drop functionality.",
-    image: "https://placehold.co/600x400/60a5fa/ffffff?text=Task+Manager",
-    tags: ["TypeScript", "React", "Firebase"],
-    motivation:
-      "I wanted to create a productivity tool that was both powerful and delightful to use. The primary challenge was to implement intuitive drag-and-drop functionality for task reordering and status updates.",
-    process:
-      "The application was built with React and TypeScript to ensure type safety and code quality. Firebase was used for real-time database and user authentication, allowing for seamless data synchronization across clients. The drag-and-drop feature was implemented using the `react-beautiful-dnd` library.",
-    outcome:
-      "A clean, fast, and collaborative task management app where users can create projects, add tasks, and manage their workflow visually. The project was a great exercise in real-time data handling and third-party library integration.",
-    liveLink: "#",
-    repoLink: "#",
-  },
-  {
-    title: "Portfolio Website",
-    summary:
-      "My personal portfolio to showcase my skills and projects (the one you are currently viewing).",
-    image: "https://placehold.co/600x400/f59e0b/ffffff?text=Portfolio",
-    tags: ["HTML", "Tailwind CSS", "JavaScript"],
-    motivation:
-      "The objective was to create a fast, accessible, and visually appealing single-page application to serve as my digital resume. It needed to effectively tell my professional story and demonstrate my frontend skills.",
-    process:
-      "Built from the ground up with vanilla JavaScript for performance and simplicity. Tailwind CSS was used for rapid, utility-first styling and to ensure a fully responsive design. I focused on clean code, subtle animations, and implementing a seamless light/dark mode experience.",
-    outcome:
-      "A lightweight, and easy-to-navigate portfolio that effectively showcases my work. It demonstrates my proficiency in core web technologies and my eye for design and user experience.",
-    liveLink: "#",
-    repoLink: "#",
-  },
-];
-const experienceData = [
-  {
-    role: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    period: "2021 - Present",
-    description:
-      "Led the development of a new customer-facing analytics dashboard using React and TypeScript. Mentored junior developers and improved code quality by implementing a new linting and testing pipeline.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Innovate Co.",
-    period: "2019 - 2021",
-    description:
-      "Developed and maintained components for a large-scale design system. Collaborated with designers and backend engineers to build new features for the main web application, improving user engagement by 15%.",
-  },
-  {
-    role: "Junior Web Developer",
-    company: "Web Crafters LLC",
-    period: "2017 - 2019",
-    description:
-      "Built and styled responsive marketing websites for various clients using HTML, CSS, and JavaScript. Gained foundational experience in version control with Git and collaborating in an agile environment.",
-  },
-];
+// const projectsData = [
+//   {
+//     title: "E-Commerce Platform",
+//     summary:
+//       "A full-featured e-commerce site with a modern UI, product filtering, and a seamless checkout process.",
+//     image: "https://placehold.co/600x400/34d399/ffffff?text=E-Commerce",
+//     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+//     motivation:
+//       "The goal was to build a highly performant, scalable, and user-friendly online store from scratch to understand the core complexities of e-commerce, from state management to payment integration.",
+//     process:
+//       "I started with designing the UI/UX in Figma, then developed the frontend with React for a dynamic user interface. The backend API was built with Node.js and Express, connected to a MongoDB database for product and user data. State management was handled with React Context API for the shopping cart.",
+//     outcome:
+//       "The result is a fully functional e-commerce platform that supports user authentication, product Browse and searching, cart management, and a mock checkout process. This project deepened my understanding of full-stack development and complex state management.",
+//     liveLink: "#",
+//     repoLink: "#",
+//   },
+//   {
+//     title: "Task Management App",
+//     summary:
+//       "A responsive and interactive task management application with drag-and-drop functionality.",
+//     image: "https://placehold.co/600x400/60a5fa/ffffff?text=Task+Manager",
+//     tags: ["TypeScript", "React", "Firebase"],
+//     motivation:
+//       "I wanted to create a productivity tool that was both powerful and delightful to use. The primary challenge was to implement intuitive drag-and-drop functionality for task reordering and status updates.",
+//     process:
+//       "The application was built with React and TypeScript to ensure type safety and code quality. Firebase was used for real-time database and user authentication, allowing for seamless data synchronization across clients. The drag-and-drop feature was implemented using the `react-beautiful-dnd` library.",
+//     outcome:
+//       "A clean, fast, and collaborative task management app where users can create projects, add tasks, and manage their workflow visually. The project was a great exercise in real-time data handling and third-party library integration.",
+//     liveLink: "#",
+//     repoLink: "#",
+//   },
+//   {
+//     title: "Portfolio Website",
+//     summary:
+//       "My personal portfolio to showcase my skills and projects (the one you are currently viewing).",
+//     image: "https://placehold.co/600x400/f59e0b/ffffff?text=Portfolio",
+//     tags: ["HTML", "Tailwind CSS", "JavaScript"],
+//     motivation:
+//       "The objective was to create a fast, accessible, and visually appealing single-page application to serve as my digital resume. It needed to effectively tell my professional story and demonstrate my frontend skills.",
+//     process:
+//       "Built from the ground up with vanilla JavaScript for performance and simplicity. Tailwind CSS was used for rapid, utility-first styling and to ensure a fully responsive design. I focused on clean code, subtle animations, and implementing a seamless light/dark mode experience.",
+//     outcome:
+//       "A lightweight, and easy-to-navigate portfolio that effectively showcases my work. It demonstrates my proficiency in core web technologies and my eye for design and user experience.",
+//     liveLink: "#",
+//     repoLink: "#",
+//   },
+// ];
+// const experienceData = [
+//   {
+//     role: "Senior Frontend Developer",
+//     company: "Tech Solutions Inc.",
+//     period: "2021 - Present",
+//     description:
+//       "Led the development of a new customer-facing analytics dashboard using React and TypeScript. Mentored junior developers and improved code quality by implementing a new linting and testing pipeline.",
+//   },
+//   {
+//     role: "Frontend Developer",
+//     company: "Innovate Co.",
+//     period: "2019 - 2021",
+//     description:
+//       "Developed and maintained components for a large-scale design system. Collaborated with designers and backend engineers to build new features for the main web application, improving user engagement by 15%.",
+//   },
+//   {
+//     role: "Junior Web Developer",
+//     company: "Web Crafters LLC",
+//     period: "2017 - 2019",
+//     description:
+//       "Built and styled responsive marketing websites for various clients using HTML, CSS, and JavaScript. Gained foundational experience in version control with Git and collaborating in an agile environment.",
+//   },
+// ];
