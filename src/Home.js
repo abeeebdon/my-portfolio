@@ -33,17 +33,17 @@ const Home = () => {
           If you need a perfect hand on your software solutions, Kindly contact
           me by clicking the button below.
         </p>
-        <div class="flex justify-center md:justify-start items-center space-x-4">
+        <div class="sm:flex-row pt-10 flex flex-col gap-6 justify-center md:justify-start items-center sm:space-x-4">
           <a
             href="#projects"
-            class="bg-yellow-500 text-white font-bold py-3 h-fit px-6 rounded-lg transition-transform hover:scale-105 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-yellow-300"
+            class="bg-yellow-500  text-center w-full max-w-[280px]  text-white font-bold py-3 h-fit px-6 rounded-lg transition-transform hover:scale-105 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-yellow-300"
           >
             View My Work
           </a>
 
           <button
             onClick={() => (window.location.href = "mailto:abeebdon@gmail.com")}
-            className="text-2xl bg-gradient-to-br from-[#d6d676] font-bold to-[#ffe71375]  shadow-lg hover:bg-[#FFD800] hover:shadow-xl transition-all duration-300 text-white px-10 py-3 rounded-lg m-4 ml-0"
+            className="md:text-xl bg-gradient-to-br text-center w-full max-w-[280px]  block from-[#d6d676] font-bold to-[#ffe71375]  shadow-lg hover:bg-[#FFD800] hover:shadow-xl transition-all duration-300 text-white px-10 py-3 rounded-lg "
           >
             Contact Me
           </button>

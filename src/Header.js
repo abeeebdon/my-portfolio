@@ -35,7 +35,7 @@ const Header = ({ handleClick, sideBar, setTheme }) => {
             </a>
           ))}
           {/* Theme Toggle */}
-          <button
+          {/* <button
             id="theme-toggle"
             title="Toggle Dark Mode"
             onClick={setTheme}
@@ -43,7 +43,7 @@ const Header = ({ handleClick, sideBar, setTheme }) => {
             className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white"
           >
             <FaMoon />
-          </button>
+          </button> */}
         </nav>
 
         {/* Mobile Menu Icon */}

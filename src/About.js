@@ -20,7 +20,7 @@ const About = () => {
           <img
             src="/abeeb.png"
             alt="pics"
-            className="w-full max-w-[400px] h-full max-h-[400px] rounded-full shadow-xl shadow-yellow-200"
+            className="w-full max-w-[400px] h-full max-h-[400px] mx-auto rounded-full shadow-xl shadow-yellow-200"
           />
         </div>
         <div className="basis-1/2">

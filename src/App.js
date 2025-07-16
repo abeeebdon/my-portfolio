@@ -11,15 +11,7 @@ import Experience from "./Experience";
 
 function App() {
   const [sideBar, setSideBar] = useState(false);
-  const [theme, setTheme] = useState(() => {
-    const userTheme = localStorage.getItem("theme");
-    if (userTheme) {
-      return userTheme;
-    }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  });
+  const [theme, setTheme] = useState("dark");
   const handleClick = () => {
     setSideBar(!sideBar);
   };
@@ -61,7 +53,14 @@ function App() {
 
   return (
     <main>
-      {sideBar && <Sidebar handleClick={handleClick} setSideBar={setSideBar} />}
+      {sideBar && (
+        <Sidebar
+          handleClick={handleClick}
+          setSideBar={setSideBar}
+          theme={theme}
+          setTheme={toggleTheme}
+        />
+      )}
 
       <Header
         handleClick={handleClick}

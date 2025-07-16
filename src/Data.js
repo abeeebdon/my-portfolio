@@ -32,10 +32,10 @@ export const project = [
 
   {
     name: "Countries App",
-    image: "/img/desktop.jpg",
+    image: "/img/flag.png",
     link: "https://count-app-sable.vercel.app/",
     details:
-      "Fylo landing page is simple landing page. It is a practice project from frontend Mentor . ",
+      "Countries app is an application that allow users access to some data about different companies including thier location, currencies and others ",
     github: "https://github.com/abeeebdon/count-app",
 
     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
@@ -89,14 +89,14 @@ export const skills = [
 export const experience = [
   {
     date: "March 2024 - September 2024",
-    info: "Participated as the major frontend developer in the development of an ERP application built with React JS and tailwind CSS. This enhanced my skills in React JS and tailwind CSS.  Participated in the development of organisation landing page, code review. Contributed to the development of a gospel application for uploading, listening and downloading of gospel music",
+    info: "Participated in the development of an ERP application built with React JS and tailwind CSS. This enhanced my skills in React JS and tailwind CSS.  Participated in the development of organisation landing page. Contributed to the development of a gospel application for uploading, listening and downloading of gospel music",
     heading: "Entacrest Nexus",
     role: "Frontend Developer Intern",
   },
   {
     date: "July 2024 - September 2024",
     info: "As one of the 523 finalists in the HNG Internship Program (out of 24,123 participants), I collaborated with a diverse team, including frontend developers, backend developers, UI/UX designers, data analysts, project managers, and QA testers. We worked on Tifi, an AI-powered platform, where I contributed to key frontend development tasks. This experience provided a real-world agile environment, enhancing my ability to deliver scalable and high-quality solutions while working with cross-functional teams under tight deadlines. It also enhanced my skills in Next JS, Shadcn, Tailwind CSS",
-    heading: "Frontend Developer Intern @ HNG",
+    heading: "HNG Internship",
     role: "Frontend Developer Intern",
   },
   {
@@ -105,12 +105,18 @@ export const experience = [
     heading: "CodeConure ",
     role: "Frontend Developer Intern",
   },
+  {
+    date: "March 2025 - June 2025",
+    info: "Participated in the development of company website. Contributed to the development of an Estate - Realtor application",
+    heading: "Entacrest Nexus",
+    role: "Frontend Developer",
+  },
 ];
 
 export const buttons = [
   { id: "home", text: "Home" },
   { id: "about", text: "About" },
-  { id: "skill", text: "My Skills" },
+  { id: "skills", text: "My Skills" },
   { id: "projects", text: "Projects" },
 ];
 
