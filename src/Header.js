@@ -1,4 +1,4 @@
-import { FaBars, FaMoon } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { buttons } from "./Data";
 
 const Header = ({ handleClick, sideBar, setTheme }) => {

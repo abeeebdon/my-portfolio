@@ -1,4 +1,4 @@
-import { FaMoon, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { buttons } from "./Data";
 
 const Sidebar = ({ setSideBar, setTheme, theme }) => {
